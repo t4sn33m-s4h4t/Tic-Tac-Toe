@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,54 @@
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="overlay"></div>
-    <div class="result">
-        <div class="cancel">×</div>
-        <img id="result-img" src="" alt="" >
-        <h2>
-            Won the Game
-        </h2>
+    <div class="result-container">
+        <div class="point-container">
+
+            <div class="point">
+                <img src="./round.png" style="width: 60px;"  alt="">
+                <h3 id="rcount">0</h3>
+            </div>
+            <h1>VS</h1>
+            <div class="point">
+                <h3 id="ccount">0</h3>
+                <img src="cross.png" style="width: 60px;" alt="">
+                
+            </div>
+        </div>
+        <div class="result">
+            <div class="cancel">×</div>
+            <img id="result-img" src="" alt="">
+            <h2 id="draw">
+                Won the Game
+            </h2>
+        </div>
     </div>
     <div class="container">
 
-    <div class="game-container">
-        <h2>
-            Tic Tac Toe
-        </h2>
-        <div class="game-box">
-            <div id="8" class="box"></div>
-            <div id="3" class="box"></div>
-            <div id="4" class="box"></div>
-            <div id="1" class="box"></div>
-            <div id="5" class="box"></div>
-            <div id="9" class="box"></div>
-            <div id="6" class="box"></div>
-            <div id="7" class="box"></div>
-            <div id="2" class="box"></div>
+        <div class="game-container">
+            <h2>
+                Tic Tac Toe
+            </h2>
+            <div class="game-box">
+                <div id="8" class="box"></div>
+                <div id="3" class="box"></div>
+                <div id="4" class="box"></div>
+                <div id="1" class="box"></div>
+                <div id="5" class="box"></div>
+                <div id="9" class="box"></div>
+                <div id="6" class="box"></div>
+                <div id="7" class="box"></div>
+                <div id="2" class="box"></div>
+            </div>
+            <div class="btn">
+                <button id="btn">Restart</button>
+            </div>
         </div>
-        <div class="btn">
-            <button id="btn">Restart</button>
-        </div>
-    </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

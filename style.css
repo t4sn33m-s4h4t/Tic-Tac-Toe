@@ -46,7 +46,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.result{
+.result-container{
 
     position: fixed;
     z-index: 10;
@@ -55,12 +55,16 @@
     transform: translate(-50%, -50%);
     width: 60%;
     height: 40%;
+    background: #e3ffff;
+    border: 3px solid darkblue;
+    transition: all ease-in-out .3s;
     align-items: center;
     justify-content: center;
-    border: 3px solid darkblue;
-    background: #e3ffff;
+}
+.result{
+    align-items: center;
+    justify-content: center;
     display: flex;
-    transition: all ease-in-out .3s;
 }
 .result img{
     width: 90px;
@@ -124,4 +128,19 @@
   .show-overlay{
     cursor: pointer;
     display: block;
+  }
+  .point-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+  }
+  .point{
+    display: flex;
+    display: f;
+    gap: 32px;
+    align-items: center;
+  }
+  .point h3{
+    font-weight: bolder;
   }
